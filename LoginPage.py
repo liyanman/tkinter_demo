@@ -26,7 +26,7 @@ class LoginPage(object):
         entry_uname = self.username.get()
         entry_psw = self.password.get()
 
-        db = pymysql.connect(host='localhost', user='root', password='man160038', database='MyDB_one', port=3306)
+        db = pymysql.connect(host='localhost', user='root', password='123456', database='MyDB_one', port=3306)
         cur = db.cursor()  # 获取操作游标
         sql = 'SELECT * FROM user_login'
         flag = True
